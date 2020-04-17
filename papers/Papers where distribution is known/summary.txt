@@ -1,5 +1,0 @@
-A very brief description of the basic idea of these methods described in the paper of Homer et al 2008:
-Described in simplistic terms, we determine whether a person is in
-a mixture by comparing a statistically describable distance
-measure between the individual and the mixture versus the
-individual and the reference population.

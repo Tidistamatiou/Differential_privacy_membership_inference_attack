@@ -1,0 +1,26 @@
+Demystifying Membership Inference Attacks
+https://arxiv.org/abs/1807.09173
+
+LOGAN: Membership Inference Attacks Against Generative Models
+https://content.sciendo.com/view/journals/popets/2019/1/article-p133.xml
+
+Monte Carlo and Reconstruction Membership Inference Attacks against Generative Models
+https://content.sciendo.com/view/journals/popets/2019/4/article-p232.xml
+
+understanding membership inferences on well-generalized learning models
+https://arxiv.org/abs/1802.04889
+
+membership inference attacks against ML models
+https://ieeexplore.ieee.org/abstract/document/7958568
+
+Deep models under the GAN: Information leakage from collaborative deep learning
+https://dl.acm.org/doi/abs/10.1145/3133956.3134012
+
+Differential privacy preservation in DL: Challenges, opportunities and solutions
+https://ieeexplore.ieee.org/abstract/document/8683991/
+
+Membership Inference Attacks against Adversarially Robust Deep Learning Models
+https://ieeexplore.ieee.org/abstract/document/8844607
+
+MIA again differentially private Deep learning model
+http://www.tdp.cat/issues16/tdp.a289a17.pdf

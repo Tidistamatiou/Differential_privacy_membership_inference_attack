@@ -1,11 +1,9 @@
-# In this Thesis I will be looking into different ways of membership inference
-# attacks against machine learning models based on distributed private datasets.
-# What this means is looking into ways to reconstruct and check if a datapoint
-# was used in the training of the model, these attacks are also known as tracing
-# attacks.
+## Short description
+The aim of this thesis is the implementation and evaluation of different membership inference attack strategies. A membership inference attack is a attack that aims to assess whether a given sample was part of the training data of the model that is being attacked. The aim of the implementation is to extend the PySyft framework with the different membership attacks according to the PySyft collaboration rules.
 
-# For this thesis I will be implementing several different tracing attacks and
-# will be evaluating their performance.
+For the evaluation, a distributed learning model will be privately trained, using the PySyft framework, on publicly available data. The different attacks will then be performed on this model and evaluated. This evaluation will include both the performance from the view of the attacker as well as the degree of privacy of the model using established privacy metrics.
+
+The goal of this research is to contribute to the PySyft framework, PySyft is a framework which was created to preserve sensitive datasets whilst making them accessible for researchers. The evaluation will thus show how well PySyft is able to prevent attacks like membership inference. Besides this thesis on membership inference, two other students will be conducting the same research but will be focusing on model inversion and reconstruction attacks. 
 
 ## Relevant papers that I have read:
 - [x] Demystifying Membership Inference Attacks

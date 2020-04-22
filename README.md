@@ -45,7 +45,7 @@ For a link to these papers please see the links.txt file in the 'papers' folder 
   * **Relevance:**
   I'm not sure if I can actually use this in my thesis as it does not focus on membership inference in the classical sense, it tries to recreate the whole (private) data set instead of just checking membership for a given sample. However if this method is actually very accurate in recreating the data set I could then easily check if this created dataset contains my sample and therefore this attack could very well be relevant for my research.
 * Differential Privacy Preservation in Deep Learning: Challenges, Opportunities and Solutions
-  * **Aim:** This paper presents the challenges faced by differential privacy in the deep learning model. They present different aspects which I think are also interesting for Serge and Boris. They analyse the existing work, classify them by the layers of the differnetial privacy mechanism and discuss their advantages and disadvantages.
+  * **Aim:** This paper presents the challenges faced by differential privacy in the deep learning model. They present different aspects which I think are also interesting for Serge and Boris. They analyse the existing work, classify them by the layers of the differential privacy mechanism and discuss their advantages and disadvantages.
   * **Relevance:**
   I think this paper can be relevant as they look into the three different aspects of privacy attacks which are the three different subjects that Serge, Boris and me are handling. We could use the framework used in this paper as inspiration for how we want to compare our different attacks and such.
 * Membership Inference Attacks against Adversarially Robust Deep Learning Models
@@ -56,3 +56,45 @@ For a link to these papers please see the links.txt file in the 'papers' folder 
   * **Aim:** This paper studies the impact of a membership inference attack against a diferentially private deep model.
   * **Relevance:**
   I think the relevancy of this paper is clear, they do exactly what I am going to be doing and are doing this on a diferentially private deep model which is, in my understanding, the same kind of model that I will be using in my research.
+
+## More indepth review of the papers that I'm picking attack methods from
+* Membership Inference Attacks Against Machine Learning Models
+ * **Requirements:**
+    * Black-box access to the target model
+    * requires some information about dataset, namely syntactic format of data records used in training in order to generate syntehtic samples for shadow models
+    * Access to the same architecture that the target model was trained on (so same MLaaS or algorithm)
+    * Trains shadow models on synthesized training data
+    * Trains a attack model on the labeled inputs and outputs of these shadow models (so it is known which instances are in the training data and which instances aren't)
+    * After training the attack model can be used to classify, based on the prediction vector obtained from the target model, whether a sample was in the training dataset or not.
+ * **pro's/con's**
+    * Method is trained on publicly availalbe datasets like CIFAR, locations data from Foursquare, MNIST and UCI Adult dataset as well as a puchased datasets from Kaggle
+    * A con is that they don't use GAN's whilst they have been very promising and are sought-after to get a publication as indicated by Saba.
+    * Another con is the need to have information about syntatic format of the dataset and it rqeuires predictions scores which are not presented by generative models.
+* LOGAN: Membership Inference Attacks Against Generative Models
+ * **Requirements:**
+    * Black box access to the target model, so no information about parameters and hyper-parameters, no information about target model archit
+    * Assumes that the attacker knowns the size of the training set, does not know how data-points are split into training and test set
+    * The attacker needs to have a set with data points they suspect are in the original training record to measure accuracy
+ * **pro's/con's**
+    * present a method for a black-box attack that is mounted through GAN's with over 80% of the training set inferred through this method
+    * method is trained on LFW, CIFAR-10 and medical images datasets.
+    * Requires no predictions scores as opposed to the previous paper
+* Monte Carlo and Reconstruction Membership Inference Attacks against Generative Models
+ * **Requirements:**
+    * Black-box access to the target model
+    * Especially Monte Carlo attack is promising, Reconstruction attack is possible but optimized for VAE's so questionably interesting for my research
+    * Requir
+ * **pro's/con's**
+    * Proposed black-box attacks are evaluted in comparison to the black-box attacks from the LOGAN paper
+    * Trained on MNIST, Fashion MNIST and CIFAR-10
+    * Especially Monte Carlo attack is promising as in their results it outperforms the LOGAN attack, Reconstruction attack is possible but optimized for VAE's so questionably interesting for my research
+    * A con is that I still find it quite difficult to really grasp the foundation of the Monte Carlo attack
+* ML-leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models
+ * **Requirements:**
+    * Black-box access to the target model
+    * access to the same kind of model architecture (through same MLaaS provider) to train shadow model for some methods
+    * Access to the same dataset that was used for training the target model for one method
+ * **pro's/con's**
+    * Relaxes the need to have information about the dataset, so in comparison to Shorki et al. they don't neccesarily need to create a synthetic dataset
+    * Attack still works even after training shadow model on dataset from different domain
+    * Present an attack that works without any shadow model -> does require the posteriors (outcomes)

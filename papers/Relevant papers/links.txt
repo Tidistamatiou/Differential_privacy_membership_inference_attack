@@ -7,20 +7,20 @@ https://content.sciendo.com/view/journals/popets/2019/1/article-p133.xml
 Monte Carlo and Reconstruction Membership Inference Attacks against Generative Models
 https://content.sciendo.com/view/journals/popets/2019/4/article-p232.xml
 
-understanding membership inferences on well-generalized learning models
+Understanding Membership Inferences On Well-Generalized Learning Models
 https://arxiv.org/abs/1802.04889
 
-membership inference attacks against ML models
+Membership Inference Attacks Against Machine Learning Models
 https://ieeexplore.ieee.org/abstract/document/7958568
 
-Deep models under the GAN: Information leakage from collaborative deep learning
+Deep Models Under the GAN: Information Leakage from Collaborative Deep Learning
 https://dl.acm.org/doi/abs/10.1145/3133956.3134012
 
-Differential privacy preservation in DL: Challenges, opportunities and solutions
+Differential Privacy Preservation in Deep Learning: Challenges, Opportunities and Solutions
 https://ieeexplore.ieee.org/abstract/document/8683991/
 
 Membership Inference Attacks against Adversarially Robust Deep Learning Models
 https://ieeexplore.ieee.org/abstract/document/8844607
 
-MIA again differentially private Deep learning model
+Membership Inference Attack against Differentially Private Deep Learning Model
 http://www.tdp.cat/issues16/tdp.a289a17.pdf

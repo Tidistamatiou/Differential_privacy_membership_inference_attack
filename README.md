@@ -82,10 +82,11 @@ For a link to these papers please see the links.txt file in the 'papers' folder 
 * Monte Carlo and Reconstruction Membership Inference Attacks against Generative Models
  * **Requirements:**
     * Black-box access to the target model
-    * Especially Monte Carlo attack is promising, Reconstruction attack is possible but optimized for VAE's so questionably interesting for my research
-    * Requir
+    * Monte carlo attack relies on samples which are close to the training data, so requires good quality of training data
+    * Use PCA, HOG and CHIST to calculate distance between samples
  * **pro's/con's**
     * Proposed black-box attacks are evaluted in comparison to the black-box attacks from the LOGAN paper
+    * Applicable on all generative models
     * Trained on MNIST, Fashion MNIST and CIFAR-10
     * Especially Monte Carlo attack is promising as in their results it outperforms the LOGAN attack, Reconstruction attack is possible but optimized for VAE's so questionably interesting for my research
     * A con is that I still find it quite difficult to really grasp the foundation of the Monte Carlo attack

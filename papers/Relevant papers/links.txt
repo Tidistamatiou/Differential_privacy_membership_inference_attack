@@ -24,3 +24,7 @@ https://ieeexplore.ieee.org/abstract/document/8844607
 
 Membership Inference Attack against Differentially Private Deep Learning Model
 http://www.tdp.cat/issues16/tdp.a289a17.pdf
+
+ML-leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models
+https://arxiv.org/pdf/1806.01246.pdf
+

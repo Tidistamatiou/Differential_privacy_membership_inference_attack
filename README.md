@@ -98,3 +98,9 @@ For a link to these papers please see the links.txt file in the 'papers' folder 
     * Relaxes the need to have information about the dataset, so in comparison to Shorki et al. they don't neccesarily need to create a synthetic dataset
     * Attack still works even after training shadow model on dataset from different domain
     * Present an attack that works without any shadow model -> does require the posteriors (outcomes)
+* Understanding Membership Inferences On Well-Generalized Learning Models
+ * **Requirements:**
+    * 
+ * **pro's/con's**
+    * Relaxes the assumption that it is a neccesary condition for the target model to be overfitted but shows it is only a sufficient condition
+
